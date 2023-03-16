@@ -1,15 +1,16 @@
 import java.awt.*;
 
 public class Planet {
-    public double earthX = 0;
-    public double earthY = 0;
-    public double earthAngle = 0;
+    private double earthX = 0;
+    private double earthY = 0;
+    private double earthAngle = 0;
     private int speed;
 
     public void setSpeed(int speed) {
         if (speed > 0) {
             this.speed = speed;
         }
+        else throw new IllegalArgumentException();
     }
 
     private int radiusSun;
@@ -18,6 +19,7 @@ public class Planet {
         if (radiusSun > 0) {
             this.radiusSun = radiusSun;
         }
+        else throw new IllegalArgumentException();
 
     }
 
@@ -27,6 +29,7 @@ public class Planet {
         if (diameter > 0) {
             this.diameter = diameter;
         }
+
 
     }
 

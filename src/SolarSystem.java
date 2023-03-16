@@ -16,7 +16,7 @@ public class SolarSystem extends JPanel {
     public SolarSystem(ArrayList<Planet> listArr) {
         list = listArr;
         setBackground(Color.BLACK);
-            Timer t = new Timer(100, new MoveListener());
+            Timer t = new Timer(50, new MoveListener());
             t.start();
 
 
